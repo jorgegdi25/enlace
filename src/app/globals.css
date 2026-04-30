@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #ff4a39; /* Exact Logo Orange */
+  --color-brand-primary-hover: #e63e2e;
+  --color-dark-bg: #090e1a; /* Azul Enlace (Dark Blue background) */
+  --color-dark-surface: #111827;
+  --color-dark-surface-hover: #1f2937;
+  --color-text-light: #ffffff;
+  --color-text-muted: #94a3b8;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #090e1a;
+  --foreground: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sora), sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); }
+.text-h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
+.text-h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
+
+.label-text {
+  font-family: var(--font-space-grotesk), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-primary);
 }
