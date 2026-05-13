@@ -5,18 +5,23 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Auditoría de Ineficiencias",
-    description: "Analizamos tu situación actual, mercado y competencia para encontrar las fugas de ingresos en tu sistema digital."
+    title: "Entendemos tu negocio",
+    description: "Analizamos tu situación actual, tu mercado y qué está fallando para tener un diagnóstico claro."
   },
   {
     number: "02",
-    title: "Diseño de Arquitectura",
-    description: "Definimos las herramientas de IA y la estructura tecnológica necesaria para tu negocio. Trazamos la hoja de ruta técnica y comercial."
+    title: "Diseño de la solución",
+    description: "Definimos las herramientas, la estructura y la estrategia exacta que tu negocio necesita para generar clientes."
   },
   {
     number: "03",
-    title: "Implementación",
-    description: "Construimos la solución o guiamos a tu equipo interno en la puesta en marcha de los nuevos sistemas."
+    title: "Lo ponemos a funcionar",
+    description: "Construimos tu sistema o guiamos a tu equipo para ponerlo en marcha y medir resultados."
+  },
+  {
+    number: "04",
+    title: "Acompañamiento",
+    description: "Te acompañamos para optimizar, medir y escalar los resultados en el tiempo."
   }
 ];
 
@@ -29,7 +34,7 @@ export default function Process() {
           <h2 className="text-h2">NUESTRO PROCESO.<br/><span className="text-text-muted">Así trabajamos.</span></h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 relative">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {/* Connector line for desktop */}
           <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-px bg-white/10 z-0" />
 

@@ -18,11 +18,11 @@ export default function About() {
             }}
             className="flex items-center gap-8 text-2xl md:text-4xl font-bold font-sora text-dark-bg italic uppercase"
           >
-            <span>UNA PÁGINA WEB SIN TRÁFICO... NO ES UN ACTIVO. ES UN GASTO.</span>
+            <span>NO VENDEMOS HERRAMIENTAS. HACEMOS QUE FUNCIONEN.</span>
             <span>▪</span>
-            <span>UNA PÁGINA WEB SIN TRÁFICO... NO ES UN ACTIVO. ES UN GASTO.</span>
+            <span>NO VENDEMOS HERRAMIENTAS. HACEMOS QUE FUNCIONEN.</span>
             <span>▪</span>
-            <span>UNA PÁGINA WEB SIN TRÁFICO... NO ES UN ACTIVO. ES UN GASTO.</span>
+            <span>NO VENDEMOS HERRAMIENTAS. HACEMOS QUE FUNCIONEN.</span>
             <span>▪</span>
           </motion.div>
         </div>
@@ -38,16 +38,14 @@ export default function About() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <span className="label-text text-brand-primary mb-4 block">Filosofía</span>
+              <span className="label-text text-brand-primary mb-4 block">Sobre Enlace</span>
               <h2 className="text-h2 mb-8">
-                SOBRE NOSOTROS.<br/>
-                Estrategia + Tecnología + IA para negocios que quieren crecer.
+                No somos una agencia tradicional.
               </h2>
               <p className="text-lg text-text-muted mb-8 leading-relaxed">
-                Nuestra misión no es hacer que tu empresa "se vea bonita" en internet. 
-                Nuestra misión es construir sistemas digitales que funcionen como activos: 
-                que traigan leads, automaticen procesos y generen ventas. Dejar de competir 
-                por precio y empezar a enfocarse en la eficiencia de sus sistemas de captación.
+                Trabajamos contigo como aliados para ayudarte a conseguir clientes de forma constante. 
+                No hacemos páginas bonitas sin propósito. Construimos sistemas que funcionan como 
+                activos reales para tu negocio.
               </p>
               
               <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8 mt-8">
@@ -78,8 +76,8 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-8 left-8 right-8">
-                <p className="text-white/80 font-medium italic">
-                  "En la intersección del código y la estrategia es donde ocurre el verdadero crecimiento."
+                <p className="text-white/80 font-medium italic text-xl">
+                  "No vendemos herramientas. Hacemos que funcionen."
                 </p>
               </div>
             </motion.div>

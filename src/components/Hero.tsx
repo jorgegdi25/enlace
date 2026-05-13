@@ -11,11 +11,11 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero_bg_1777484411686.png"
+          src="/hero-bg.png"
           alt="ENLACE Digital Intelligence Architecture"
           fill
           priority
-          className="object-cover opacity-30"
+          className="object-cover opacity-70"
         />
         {/* Gradients for blending */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#090e1a] via-transparent to-transparent" />
@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <span className="label-text text-brand-primary mb-4 block">
-              Digital Intelligence Agency
+              Sistemas Digitales con IA
             </span>
           </motion.div>
 
@@ -40,7 +40,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-h1 mb-4 text-white leading-tight"
           >
-            Arquitectos de sistemas digitales con IA para <span className="text-brand-primary">generar clientes.</span>
+            Creamos sistemas digitales que atraen clientes <span className="text-brand-primary">de forma constante.</span>
           </motion.h1>
 
           <motion.p
@@ -49,8 +49,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-text-muted mb-8 max-w-2xl leading-relaxed"
           >
-            No vendemos páginas web. Diseñamos sistemas inteligentes que hacen
-            que los clientes lleguen de forma recurrente a tu negocio.
+            No se trata de tener una página web. Se trata de tener un sistema que haga que los clientes lleguen.
           </motion.p>
 
           <motion.div
@@ -59,13 +58,16 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Link
-              href="#contacto"
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                window.dispatchEvent(new CustomEvent('open-chat'));
+              }}
               className="bg-brand-primary hover:bg-brand-primary-hover text-white px-8 py-4 font-bold tracking-wide uppercase transition-colors flex items-center justify-center gap-2 group"
             >
-              Agendar Diagnóstico
+              Analizar mi negocio
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </button>
             <Link
               href="#metodologia"
               className="border border-white/20 hover:border-white/40 bg-white/5 text-white px-8 py-4 font-bold tracking-wide uppercase transition-colors flex items-center justify-center gap-2"

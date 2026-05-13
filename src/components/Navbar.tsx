@@ -33,9 +33,15 @@ export default function Navbar() {
           <Link href="#servicios" className="text-sm font-medium text-text-muted hover:text-brand-primary transition-colors">SERVICIOS</Link>
           <Link href="#metodologia" className="text-sm font-medium text-text-muted hover:text-brand-primary transition-colors">METODOLOGÍA</Link>
           <Link href="#nosotros" className="text-sm font-medium text-text-muted hover:text-brand-primary transition-colors">NOSOTROS</Link>
-          <Link href="#contacto" className="bg-brand-primary hover:bg-brand-primary-hover text-white px-6 py-2.5 text-sm font-bold tracking-wide transition-colors uppercase">
-            Iniciar Proyecto
-          </Link>
+          <button 
+            onClick={(e) => {
+              e.preventDefault();
+              window.dispatchEvent(new CustomEvent('open-chat'));
+            }}
+            className="bg-brand-primary hover:bg-brand-primary-hover text-white px-6 py-2.5 text-sm font-bold tracking-wide transition-colors uppercase"
+          >
+            ANALIZAR MI NEGOCIO
+          </button>
         </div>
 
         {/* Mobile Toggle */}
@@ -54,9 +60,16 @@ export default function Navbar() {
           <Link href="#servicios" onClick={() => setIsOpen(false)} className="text-sm font-medium text-white">SERVICIOS</Link>
           <Link href="#metodologia" onClick={() => setIsOpen(false)} className="text-sm font-medium text-white">METODOLOGÍA</Link>
           <Link href="#nosotros" onClick={() => setIsOpen(false)} className="text-sm font-medium text-white">NOSOTROS</Link>
-          <Link href="#contacto" onClick={() => setIsOpen(false)} className="bg-brand-primary text-center text-white px-6 py-3 text-sm font-bold uppercase mt-4">
-            Iniciar Proyecto
-          </Link>
+          <button 
+            onClick={(e) => {
+              e.preventDefault();
+              setIsOpen(false);
+              window.dispatchEvent(new CustomEvent('open-chat'));
+            }}
+            className="bg-brand-primary text-center text-white px-6 py-3 text-sm font-bold uppercase mt-4"
+          >
+            ANALIZAR MI NEGOCIO
+          </button>
         </motion.div>
       )}
     </nav>

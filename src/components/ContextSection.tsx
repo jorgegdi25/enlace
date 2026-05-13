@@ -16,21 +16,20 @@ export default function ContextSection() {
             transition={{ duration: 0.6 }}
           >
             <span className="label-text text-brand-primary mb-4 block">
-              La verdad incómoda
+              La realidad
             </span>
             <h2 className="text-h2 mb-6">
-              Puedes tener página web... y aun así no estar generando clientes.
+              Si no genera clientes, no es un activo. Es un gasto.
             </h2>
             <p className="text-lg text-text-muted mb-8 leading-relaxed">
-              La mayoría de las empresas confunden tener una &quot;presencia online&quot;
-              con tener un motor de ventas. Una web estática es un folleto digital que nadie lee.
-              Nosotros construimos infraestructuras que interceptan la demanda y la
-              convierten en oportunidades reales.
+              Una página web sin tráfico, redes sociales sin resultados, o campañas sin estrategia... 
+              no son activos. No importa cuánto inviertas si no existe una forma clara de atraer 
+              y convertir clientes.
             </p>
             
             <div className="flex items-center gap-4">
               <div className="w-12 h-px bg-brand-primary"></div>
-              <span className="text-brand-primary font-medium">Transformación de gasto a activo</span>
+              <span className="text-brand-primary font-medium">Eso es lo que resolvemos</span>
             </div>
           </motion.div>
 

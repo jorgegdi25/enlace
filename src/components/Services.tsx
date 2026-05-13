@@ -6,23 +6,23 @@ import { Network, Zap, Puzzle, Map } from "lucide-react";
 const services = [
   {
     icon: <Network className="text-brand-primary" size={24} />,
-    title: "Sistema completo",
-    description: "Ecosistema digital llave en mano diseñado para la captura y conversión de leads de alto valor.",
+    title: "Sistema que genera clientes",
+    description: "Organizamos todo —o lo construimos desde cero— para que funcione como un sistema que atrae, genera confianza y facilita la venta.",
   },
   {
     icon: <Zap className="text-brand-primary" size={24} />,
-    title: "Optimización",
-    description: "Mejoramos tus activos actuales mediante auditorías de IA y optimización de flujos de usuario.",
+    title: "Mejoramos lo que ya tienes",
+    description: "Auditorías de IA y optimización de tus activos actuales para que dejen de ser un gasto y empiecen a generar resultados.",
   },
   {
     icon: <Puzzle className="text-brand-primary" size={24} />,
-    title: "Piezas específicas",
-    description: "Landing pages de alta conversión, embudos de venta y automatizaciones críticas para el día a día.",
+    title: "Páginas que sí venden",
+    description: "Landing pages de alta conversión, embudos de venta y automatizaciones diseñadas para convertir visitantes en clientes.",
   },
   {
     icon: <Map className="text-brand-primary" size={24} />,
-    title: "Estrategia + guía",
-    description: "Acompañamiento consultivo continuo para asegurar que la tecnología evolucione con tu mercado.",
+    title: "Acompañamiento estratégico",
+    description: "No te dejamos solo. Te acompañamos para asegurar que todo funcione y evolucione con tu mercado.",
   }
 ];
 
@@ -52,9 +52,9 @@ export default function Services() {
           <span className="label-text text-brand-primary mb-4 block">
             Nuestras Soluciones
           </span>
-          <h2 className="text-h2 mb-6">¿Cómo podemos ayudarte?</h2>
+          <h2 className="text-h2 mb-6">Cómo te ayudamos</h2>
           <p className="text-lg text-text-muted">
-            Trabajamos con lo que tu negocio realmente necesita para escalar.
+            No se trata de tener más herramientas. Se trata de que funcionen.
           </p>
         </div>
 
