@@ -64,7 +64,8 @@ export async function GET() {
         iso: d.toISOString()
       }))
     });
-  } catch (error) {
-    return NextResponse.json({ error: 'Error' }, { status: 500 });
+  } catch (error: any) {
+    console.error('Calendar availability error:', error?.response?.data || error?.message || error);
+    return NextResponse.json({ error: error?.response?.data?.error?.message || error?.message || 'Error desconocido' }, { status: 500 });
   }
 }
